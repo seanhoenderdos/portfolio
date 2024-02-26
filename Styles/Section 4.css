@@ -1,0 +1,34 @@
+/*glitter icons*/ 
+
+.systemiconcontainer:hover .mysystemiconname {
+  opacity: 1;
+  white-space: normal;
+}
+
+.icon {
+  width: 96px;
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.icon :is(img, canvas) {
+  position: absolute;
+  inset: 0;
+}
+
+img {
+  filter: contrast(1);
+}
+
+.systemcanvas {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  mask: var(--iconsystem);
+  opacity: var(--active, 0);
+  transition: opacity 0.2s;
+}
+
+.icon:hover {
+  --active: 1;
+}

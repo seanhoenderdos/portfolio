@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+.container-sec-51 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-sec-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.textsec5 {
+  font-size: 100px;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+  
+  width: 70%;
+  height: 200px;
+  color: rgb(182, 182, 182, 0.2);
+  background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+  
+
+  border-bottom: 1px solid #2F2B28;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.spansec5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6978;/*#B1EDE8*/
+  color: #212121;
+  
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.accessline {
+  color: #212121;
+  background-color: #212121;
+  position: relative;
+  right:290px;
+  bottom: 10px;
+  width: 10px;
+  font-size: 1px;
+}
+
+.accessline2 {
+  background-color: #212121;
+  background-color: #212121;
+  position: relative;
+  right:225px;
+  bottom: 10px;
+  width: 10px;
+  font-size: 1px;
+}
+
+.accessline3 {
+  background-color: #212121;
+  background-color: #212121;
+  position: relative;
+  right:165px;
+  bottom: 10px;
+  width: 10px;
+  font-size: 1px;
+}
+
+.accessline4 {
+  background-color: #212121;
+  background-color: #212121;
+  position: relative;
+  right:15px;
+  bottom: 10px;
+  width: 10px;
+  font-size: 1px;
+}
+
+.accessline5 {
+  background-color: #212121;
+  background-color: #212121;
+  position: relative;
+  right:25px;
+  bottom: 10px;
+  width: 10px;
+  font-size: 1px;
+}
+
+
+.textsec5:hover > .spansec5 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

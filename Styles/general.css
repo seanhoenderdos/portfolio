@@ -1,0 +1,1799 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  cursor: none;
+}
+
+html,
+body {
+  background: #efefef;
+  color: #212121;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+::selection {
+  background: #efefef;
+  color: #212121;
+  mix-blend-mode: difference;
+}
+
+::-moz-selection {
+  background: #efefef;
+  color: #212121;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.hero-title {
+  font-size: 5vw;
+  line-height: 1.5em;
+  font-weight: 900;
+  width: 90%;
+  display: inline-block;
+  align-items: center;
+}
+
+.ht-span{
+  font-family: "Inconsolata", "Montserrat";
+  font-size: 3vw;
+  font-weight: 900;
+  width: 90%;
+  display: inline-block;
+  align-items: center;
+  vertical-align: top;
+}
+
+.nav-title {
+  font-size: 4em;
+}
+
+a {
+  transition: all 0.25s ease-in-out;
+}
+
+.white, a.white {
+  color: #efefef;
+}
+
+.black {
+  color: #212121;
+}
+
+.pearl, a.pearl {
+  color: #fff;
+}
+
+.green, a.green {
+  color: #ff6978;
+}
+
+.pink {
+  color: #ff6978;
+}
+
+.blend {
+  mix-blend-mode: difference !important;
+  color: #efefef;
+  position: relative;
+  z-index: 2;
+}
+
+.bg-black {
+  background-color: #212121;
+}
+
+.bg-green {
+  background-color: #efefef;
+}
+
+.bg-topographic {
+  background-image: url("https://res.cloudinary.com/dmezet2fs/image/upload/v1708712167/SH_COMPLETE_WHITE_TRANS_kq5tuj.png");
+  background-size: 5000px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff6978;
+  transition: transform 350ms ease;
+  transform: translate(-50%, -50%) scale(0.3);
+  z-index: 1000;
+}
+
+.custom-cursor--link {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+.swoosh {
+  background-image: url("https://res.cloudinary.com/dmezet2fs/image/upload/v1708712166/S_COMPLETE_RED_TRans_g64jpb.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 20px;
+  left: 18px;
+  width: 230px;
+  height: 45px;
+  z-index: 1000;
+  background-position: left;
+}
+
+.sticky-nav {
+  top: 20px;
+  left: 20px;
+  position: fixed;
+  width: calc(100% - 40px);
+  z-index: 999;
+}
+.sticky-nav.difference {
+  background-repeat: no-repeat;
+  background-size: contain;
+  mix-blend-mode: difference;
+}
+.sticky-nav.difference #nav-btn {
+  filter: invert(0);
+}
+.sticky-nav .logo {
+  width: 220px;
+  height: 45px;
+  background-image: url("https://res.cloudinary.com/dmezet2fs/image/upload/v1708712167/SH_COMPLETE_WHITE_TRANS_kq5tuj.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: 998;
+}
+.sticky-nav #nav-btn {
+  width: 60px;
+  z-index: 999;
+  filter: invert(1);
+}
+.sticky-nav #nav-btn .icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #fff;
+}
+
+#takeover-nav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  left: 0;
+  top: -200%;
+  transition: all 0.5s ease-in-out;
+  z-index: 996;
+}
+#takeover-nav.shown {
+  top: 0;
+}
+#takeover-nav .nav-col {
+  min-height: 100vh;
+}
+#takeover-nav .nav-col a {
+  color: #ff6978;
+}
+#takeover-nav .nav-col a:hover {
+  color: #212121;
+}
+#takeover-nav .nav-contact .content {
+  max-width: 700px;
+}
+#takeover-nav .nav-items {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+#takeover-nav .contact-items {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+#takeover-nav .contact-items a:hover {
+  color: #ff6978;
+}
+#takeover-nav .social {
+  font-size: 0.75em;
+}
+#takeover-nav .social a {
+  color: #ff6978;
+}
+#takeover-nav .social a:hover {
+  color: #efefef;
+}
+
+.gradient-overlay {
+  bottom: 0;
+  height: 50%;
+  background: -moz-linear-gradient(top, rgba(33, 33, 33, 0) 0%, #212121 50%);
+  background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0) 0%, #212121 50%);
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 0) 0%, #212121 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00212121", endColorstr="#212121",GradientType=0 );
+  z-index: 1;
+  border-bottom-right-radius: 15vw;
+  pointer-events: none;
+}
+
+.video-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-bottom-right-radius: 15vw;
+  pointer-events: none;
+}
+
+#video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  transform: rotate(180deg);
+}
+
+section.three, section.four, section.five {
+  min-height: 800px;
+  width: 100%;
+}
+
+section.hero {
+  min-height: 1000px;
+  width: 100%;
+}
+section.two {
+  height: 210px;
+}
+
+section.hero {
+  background-color: #212121;
+  border-bottom-right-radius: 15vw;
+  position: relative;
+}
+section.hero:before {
+  content: "";
+  background-color: #212121;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 15vw;
+  height: 15vw;
+}
+section.hero:after {
+  content: "";
+  background-color: #efefef;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 15vw;
+  height: 15vw;
+  border-top-left-radius: 15vw;
+  border: none !important;
+}
+section.two {
+  background-color: #efefef;
+}
+section.three {
+  background-color: #81F4E1;
+}
+section.personalprojectscontainer {
+  background-color: #efefef;
+} /*#ff6978 previous red*/
+section.five {
+  background-color: #212121;
+}
+
+/*Accessability Desktop*/
+.accessibilitydeco {
+  color: #ff6978;
+}
+
+.accessibilitydecoline {
+  background-color: #ff6978;
+  display: block;
+  width: 5%;
+  height: 2%;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.redline {
+  background-color: #ff6978;
+  width: 10%;
+  height: 3%;
+  opacity: 0;
+}
+
+  @media screen and (min-width: 1200px) {
+
+    .hero {
+      height: 75vh;
+    }
+    .hero #video-bg {
+      object-position: 0 5vw;
+    }
+
+    .hero .hero-title {
+      font-size: 8vw;
+    }
+
+    #takeover-nav .nav-contact .nav-title {
+      font-size: 5.5em;
+    }
+
+    section.hero {
+      min-height: 200px;
+      height: 1140px;
+    }
+
+    /*Section 2*/
+
+    section.two {
+      min-height: 300px;
+    }
+
+    section.two #app {
+      position: relative;
+      top: -250px;
+      z-index: 2;
+    }
+
+    /*Section 3*/
+
+    .personalprojectscontainer .section-title {
+      font-size: 75px;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .storycontainer {
+      padding: 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    .chaptercontainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+    }
+
+    .chaptercontainer h2 {
+      font-family: "Inconsolata", sans-serif;
+      font-size:6vh;
+      flex-shrink:0;
+      padding-right:0.3em;
+      color:#212121;
+      text-align: top;
+      padding-left: 100px;
+      margin:0;
+      text-align: left;	
+    }
+    
+    .chaptercontainer p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      padding-top: 10px;
+      padding-left: 100px;
+      padding-right: 40px;
+    }
+
+    .project-image-container {
+      margin: auto;
+    }
+    
+    .project-image-container .project-image {
+      height: 580px;
+      width: 326.25px;
+    }
+
+    .project-description-container {
+      width: 50%;
+      padding: 20px;
+    }
+
+    /*Section 5*/
+    div.container-sec-5 h1.textsec5 {
+      font-size: 90px;
+      width: 80%;
+      height: 170px;
+    }
+
+  }
+
+  @media screen and (max-width: 1199px) { 
+    
+    /*Section 1*/
+    
+    #takeover-nav .nav-menu {
+      min-height: 1024px;
+    }
+    #takeover-nav .nav-menu a {
+      color: #f87575;
+    }
+    #takeover-nav .nav-menu a:hover {
+      color: #212121;
+    }
+    #takeover-nav .nav-contact {
+      min-height: 600px;
+    }
+    #takeover-nav .nav-contact .nav-title {
+      font-size: 4.5em;
+    }
+
+    #takeover-nav .nav-col {
+      min-height: 100vh;
+    }
+
+    .hero {
+      min-height: 600px;
+      height: 1250px;
+    }
+    .hero .hero-title {
+      font-size: 11vw;
+    }
+    .hero #video-bg {
+      object-position: 0 15vw;
+    }
+
+    section.hero, section.two, section.three, section.five {
+      width: 100%;
+    }
+
+    section.hero {
+      height: 1420px;
+    }
+
+    /*Section 2*/
+
+    section.two {
+      height: 1700px;
+    }
+
+    .two text-center p-4 {
+      margin: 40px 0;
+      font-family: "Montserrat";
+      font-size: 14px;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+      position: absolute;
+    }
+
+    .container-sec-2 .section-title {
+      position: relative;
+      top: -300px;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    section.two #app {
+      position: relative;
+      top: -250px;
+      z-index: 2;
+    }
+
+    #app .section-title {
+      position: relative;
+      top: -450px;
+    }
+
+    #app .title {
+      font-family: "Montserrat";
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+      text-align: center;
+    }
+
+    #app p {
+      line-height: 1.5em;
+    }
+
+    #app h1 + p,
+    #app p + p {
+      margin-top: 10px;
+    }
+
+    #app .container-projects {
+      padding: 40px 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #app .card-wrap {
+      transform: perspective(1200px);
+      transform-style: preserve-3d;
+    }
+
+    #app .card-info p {
+      margin-top: 20px;
+    }
+
+    #app .card-wrap:hover .card-info {
+      opacity: 1; /* Show overlay on hover */
+    }
+
+    #app .card-wrap:hover .card-info p,
+    #app .card-wrap:hover .card-info h1,
+    #app .card-wrap:hover .card-info .redline {
+      opacity: 1;
+    }
+
+    #app .card-wrap:hover .card-info,
+    #app .card-wrap:hover .card-info p,
+    #app .card-wrap:hover .card-info h1,
+    #app card-wrap:hover .card-info .redline {
+      transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #app .card-wrap:hover .card-info:after {
+      transition: 3s cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #app .card-wrap:hover .card-bg {
+      transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+        opacity 4s cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 0.8;
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
+    #app .card-wrap:hover .card {
+      transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: none;
+    }
+
+    section.two #app .card {
+      position: relative;
+      flex: 0 0 400px;
+      width: 550px;
+      height: 550px;
+      background-color: #000;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+        inset #333 0 0 0 5px,
+        inset rgba(255, 255, 255, 0.4) 0 0 0 6px;
+      transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    #app .card-bg {
+      opacity: 0.5;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      right: -20px;
+      bottom: -20px;
+      padding: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+        opacity 4s 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      pointer-events: none;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
+    #app .card-info {
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Ensure the overlay covers the entire card */
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+      transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition for opacity and transform */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box; /* Include padding in width and height */
+      opacity: 0; /* Initially hidden */
+    }
+
+    #app .card-info p,
+    #app .card-info h1,
+    #app .card-info .redline {
+      opacity: 1; /* Ensure text content is visible */
+      transition: opacity 0.6s ease; /* Smooth transition for opacity */
+    }
+
+    #app .card-info * {
+      position: relative;
+      z-index: 1;
+    }
+
+    #app .card-info:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      background-blend-mode: overlay;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    #app .card-info h1 {
+      font-family: "Inconsolata", "Montserrat";
+      font-size: 36px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+                  transform 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    #app .card-wrapper {
+      display: inline-block; /* or any other appropriate display value */
+    }
+
+    #app .card-link {
+      text-decoration: none; /* Remove underline on the link */
+      color: inherit; /* Inherit text color from parent */
+      display: block; /* Make the link fill the entire wrapper */
+    }
+
+    #app .forwardslash {
+      color: #ff6978;
+      font-weight: 800;
+    }
+
+
+    /*Section 3*/
+
+    .personalprojectscontainer .section-title {
+      font-size: 75px;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .storycontainer {
+      padding: 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    .chaptercontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .chaptercontainer h2 {
+      font-family: "Inconsolata", sans-serif;
+      font-size:6vh;
+      flex-shrink:0;
+      padding-right:0.3em;
+      color:#212121;
+      text-align: top;
+      padding-left: 0px;
+      margin:0;
+      text-align: center;	
+    }
+    
+    .chaptercontainer p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      padding-top: 10px;
+      padding-left: 0px;
+      padding-right: 0px;
+      text-align: center;
+    }
+
+    .project-image-container {
+      margin: auto;
+    }
+
+    .farewellimage {
+      width: 100%;
+      height: auto;
+    }
+    
+    .project-image-container .project-image {
+      height: 580px;
+      width: 326.25px;
+    }
+
+    .project-description-container {
+      width: 100%;
+      padding: 20px;
+    }
+
+    /*Section 5*/
+    
+    div.container-sec-5 h1.textsec5 {
+      font-size: 60px;
+      width: 80%;
+      height: 150px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    #takeover-nav .nav-menu {
+      min-height: 1024px;
+    }
+    #takeover-nav .nav-menu a {
+      color: #f87575;
+    }
+    #takeover-nav .nav-menu a:hover {
+      color: #212121;
+    }
+    #takeover-nav .nav-contact {
+      min-height: 600px;
+    }
+    #takeover-nav .nav-contact .nav-title {
+      font-size: 3.5em;
+    }
+
+    header #takeover-nav .contact-items {
+      font-size: 1.5em;
+    }
+
+    #takeover-nav .nav-col {
+      min-height: 100vh;
+    }
+
+    .hero {
+      min-height: 600px;
+      height: 1250px;
+    }
+    .hero .hero-title {
+      font-size: 11vw;
+    }
+    .hero #video-bg {
+      object-position: 0 15vw;
+    }
+
+    section.hero, section.two, section.three, section.five {
+      width: 100%;
+    }
+
+    section.hero {
+      height: 1300px;
+    }
+
+    /*Section 2*/
+
+    section.two {
+      height: 1500px;
+    }
+
+    .two text-center p-4 {
+      margin: 40px 0;
+      font-family: "Montserrat";
+      font-size: 14px;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+      position: absolute;
+    }
+
+    .container-sec-2 .section-title {
+      position: relative;
+      top: -300px;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    section.two #app {
+      position: relative;
+      top: -300px;
+      z-index: 2;
+    }
+
+    #app .section-title {
+      position: relative;
+      top: -450px;
+    }
+
+    #app .title {
+      font-family: "Montserrat";
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+      text-align: center;
+    }
+
+    #app p {
+      line-height: 1.5em;
+    }
+
+    #app h1 + p,
+    #app p + p {
+      margin-top: 10px;
+    }
+
+    #app .container-projects {
+      padding: 40px 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #app .card-wrap {
+      transform: perspective(1200px);
+      transform-style: preserve-3d;
+    }
+
+    #app .card-info p {
+      margin-top: 20px;
+    }
+
+    #app .card-wrap:hover .card-info {
+      opacity: 1; /* Show overlay on hover */
+    }
+
+    #app .card-wrap:hover .card-info p,
+    #app .card-wrap:hover .card-info h1,
+    #app .card-wrap:hover .card-info .redline {
+      opacity: 1;
+    }
+
+    #app .card-wrap:hover .card-info,
+    #app .card-wrap:hover .card-info p,
+    #app .card-wrap:hover .card-info h1,
+    #app card-wrap:hover .card-info .redline {
+      transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #app .card-wrap:hover .card-info:after {
+      transition: 3s cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #app .card-wrap:hover .card-bg {
+      transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+        opacity 4s cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 0.8;
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
+    #app .card-wrap:hover .card {
+      transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: none;
+    }
+
+    section.two #app .card {
+      position: relative;
+      flex: 0 0 400px;
+      width: 525px;
+      height: 525px;
+      background-color: #000;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+        inset #333 0 0 0 5px,
+        inset rgba(255, 255, 255, 0.4) 0 0 0 6px;
+      transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    #app .card-bg {
+      opacity: 0.5;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      right: -20px;
+      bottom: -20px;
+      padding: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+        opacity 4s 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      pointer-events: none;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
+    #app .card-info {
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Ensure the overlay covers the entire card */
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+      transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition for opacity and transform */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box; /* Include padding in width and height */
+      opacity: 0; /* Initially hidden */
+    }
+
+    #app .card-info p,
+    #app .card-info h1,
+    #app .card-info .redline {
+      opacity: 1; /* Ensure text content is visible */
+      transition: opacity 0.6s ease; /* Smooth transition for opacity */
+    }
+
+    #app .card-info * {
+      position: relative;
+      z-index: 1;
+    }
+
+    #app .card-info:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      background-blend-mode: overlay;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    #app .card-info h1 {
+      font-family: "Inconsolata", "Montserrat";
+      font-size: 36px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+                  transform 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    #app .card-wrapper {
+      display: inline-block; /* or any other appropriate display value */
+    }
+
+    #app .card-link {
+      text-decoration: none; /* Remove underline on the link */
+      color: inherit; /* Inherit text color from parent */
+      display: block; /* Make the link fill the entire wrapper */
+    }
+
+    #app .forwardslash {
+      color: #ff6978;
+      font-weight: 800;
+    }
+
+    /*Section 3*/
+
+    .personalprojectscontainer .section-title {
+      font-size: 75px;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .storycontainer {
+      padding: 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    .chaptercontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .chaptercontainer h2 {
+      font-family: "Inconsolata", sans-serif;
+      font-size:5vh;
+      flex-shrink:0;
+      padding-right:0.3em;
+      color:#212121;
+      text-align: top;
+      padding-left: 0px;
+      margin:0;
+      text-align: center;	
+    }
+    
+    .chaptercontainer p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      padding-top: 10px;
+      padding-left: 0px;
+      padding-right: 0px;
+      text-align: center;
+    }
+
+    .project-image-container {
+      margin: auto;
+    }
+
+    .farewellimage {
+      width: 100%;
+      height: auto;
+    }
+
+    .gradimage {
+      height: 50%;
+      width: 100%;
+    }
+    
+    .project-image-container img.project-image {
+      height: 100%;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .project-description-container {
+      max-width: 100%;
+      padding: 20px;
+    }
+
+    /*Section 5*/
+
+    div.container-sec-5 h1.textsec5 {
+      font-size: 40px;
+      width: 95%;
+      height: 120px;
+      justify-content: center;
+    }
+
+  }
+
+  @media screen and (max-width: 575px) {
+    header .swoosh {
+      width: 165px;
+      height: 35px;
+      top: 10px;
+    }
+    header .sticky-nav {
+      top: 10px;
+    }
+    header .sticky-nav .logo {
+      width: 150px;
+      height: 35px;
+    }
+    header .sticky-nav #nav-btn {
+      width: 40px;
+    }
+    header #takeover-nav .contact-items {
+      font-size: 1em;
+    }
+
+    #takeover-nav .nav-contact .nav-title {
+      font-size: 3.5em;
+    }
+
+    #takeover-nav .nav-col {
+      min-height: 50vh;
+    }
+
+    #takeover-nav .nav-items {
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+
+    .hero .hero-title {
+      font-size: 12vw;
+    }
+    .hero #video-bg {
+      object-position: 0 15vw;
+    }
+
+    #takeover-nav .nav-menu a {
+      color: #f87575;
+    }
+    #takeover-nav .nav-menu a:hover {
+      color: #212121;
+    }
+
+    #takeover-nav .nav-col {
+      min-height: 50vh;
+    }
+
+    #takeover-nav .nav-items {
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    section.hero {
+      min-height: 200px;
+      height: 900px;
+    }
+    
+
+    /*Section 2*/
+
+    section.two {
+      height: 900px;
+    }
+
+    .two text-center p-4 {
+      margin: 40px 0;
+      font-family: "Montserrat";
+      font-size: 14px;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+      position: absolute;
+    }
+
+    .container-sec-2 .section-title {
+      position: relative;
+      top: -300px;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    section.two #app {
+      position: relative;
+      top: -230px;
+      z-index: 2;
+    }
+
+    #app .section-title {
+      position: relative;
+      top: -450px;
+    }
+
+    #app .title {
+      font-family: "Montserrat";
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+      text-align: center;
+    }
+
+    #app p {
+      line-height: 1.5em;
+    }
+
+    #app h1 + p,
+    #app p + p {
+      margin-top: 10px;
+    }
+
+    #app .container-projects {
+      padding: 40px 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #app .card-wrap {
+      transform: perspective(1200px);
+      transform-style: preserve-3d;
+    }
+
+    #app .card-info p {
+      margin-top: 20px;
+    }
+
+    #app .card-wrap:hover .card-info {
+      opacity: 1; /* Show overlay on hover */
+    }
+
+    #app .card-wrap:hover .card-info p,
+    #app .card-wrap:hover .card-info h1,
+    #app .card-wrap:hover .card-info .redline {
+      opacity: 1;
+    }
+
+    #app .card-wrap:hover .card-info,
+    #app .card-wrap:hover .card-info p,
+    #app .card-wrap:hover .card-info h1,
+    #app card-wrap:hover .card-info .redline {
+      transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #app .card-wrap:hover .card-info:after {
+      transition: 3s cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #app .card-wrap:hover .card-bg {
+      transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+        opacity 4s cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 0.8;
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
+    #app .card-wrap:hover .card {
+      transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: none;
+    }
+
+    section.two #app .card {
+      position: relative;
+      flex: 0 0 400px;
+      width: 300px;
+      height: 300px;
+      background-color: #000;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+        inset #333 0 0 0 5px,
+        inset rgba(255, 255, 255, 0.4) 0 0 0 6px;
+      transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    #app .card-bg {
+      opacity: 0.5;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      right: -20px;
+      bottom: -20px;
+      padding: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+        opacity 4s 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      pointer-events: none;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
+    #app .card-info {
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Ensure the overlay covers the entire card */
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+      transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition for opacity and transform */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box; /* Include padding in width and height */
+      opacity: 0; /* Initially hidden */
+    }
+
+    #app .card-info p,
+    #app .card-info h1,
+    #app .card-info .redline {
+      opacity: 1; /* Ensure text content is visible */
+      transition: opacity 0.6s ease; /* Smooth transition for opacity */
+    }
+
+    #app .card-info * {
+      position: relative;
+      z-index: 1;
+    }
+
+    #app .card-info:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      background-blend-mode: overlay;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+
+    #app .card-info h1 {
+      font-family: "Inconsolata", "Montserrat";
+      font-size: 36px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+                  transform 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    #app .card-wrapper {
+      display: inline-block; /* or any other appropriate display value */
+    }
+
+    #app .card-link {
+      text-decoration: none; /* Remove underline on the link */
+      color: inherit; /* Inherit text color from parent */
+      display: block; /* Make the link fill the entire wrapper */
+    }
+
+    #app .forwardslash {
+      color: #ff6978;
+      font-weight: 800;
+    }
+
+    /*Section 3*/
+
+    .personalprojectscontainer .section-title {
+      font-size: 40px;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .storycontainer {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .chaptercontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .chaptercontainer h2 {
+      font-family: "Inconsolata", sans-serif;
+      font-size:5vh;
+      flex-shrink:0;
+      padding-right:0.3em;
+      color:#212121;
+      text-align: top;
+      padding-left: 0px;
+      margin:0;
+      text-align: center;	
+    }
+    
+    .chaptercontainer p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      padding-top: 10px;
+      padding-left: 0px;
+      padding-right: 0px;
+      text-align: center;
+    }
+
+    .project-image-container {
+      margin: auto;
+    }
+
+    .farewellimage {
+      width: 100%;
+      height: auto;
+    }
+
+    .gradimage {
+      height: 50%;
+      width: 100%;
+    }
+    
+    .project-image-container img.project-image {
+      height: 100%;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .project-description-container {
+      max-width: 100%;
+      padding: 20px;
+    }
+
+    
+    /*Section 5*/
+
+    div.container-sec-5 h1.textsec5 {
+      font-size: 40px;
+      width: 95%;
+      height: 120px;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+
+    /*Section 1*/
+
+  header .swoosh {
+    width: 165px;
+    height: 35px;
+    top: 10px;
+  }
+  header .sticky-nav {
+    top: 10px;
+  }
+  header .sticky-nav .logo {
+    width: 150px;
+    height: 35px;
+  }
+  header .sticky-nav #nav-btn {
+    width: 40px;
+  }
+  header #takeover-nav .contact-items {
+    font-size: 1em;
+  }
+
+  #takeover-nav .nav-contact .nav-title {
+    font-size: 2.5em;
+  }
+
+  #takeover-nav .nav-menu a {
+    color: #f87575;
+  }
+  #takeover-nav .nav-menu a:hover {
+    color: #212121;
+  }
+
+  #takeover-nav .nav-col {
+    min-height: 60vh;
+  }
+
+  #takeover-nav .nav-items {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+
+  .hero .hero-title {
+    font-size: 13vw;
+  }
+
+  .hero #video-bg {
+    object-position: 0 30vw;
+  }  
+
+  section.hero {
+    min-height: 200px;
+    height: 650px;
+  }  
+
+  /*Section 2*/
+
+  section.two {
+    height: 700px;
+  }
+
+  .two text-center p-4 {
+    margin: 40px 0;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+  }
+
+  .container-sec-2 .section-title {
+    position: relative;
+    top: -300px;
+    z-index: 2;
+    opacity: 0;
+  }
+
+  section.two #app {
+    position: relative;
+    top: -250px;
+    z-index: 2;
+  }
+
+  #app .section-title {
+    position: relative;
+    top: -450px;
+  }
+
+  #app .title {
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+  }
+
+  #app p {
+    line-height: 1.5em;
+  }
+
+  #app h1 + p,
+  #app p + p {
+    margin-top: 10px;
+  }
+
+  #app .container-projects {
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #app .card-wrap {
+    transform: perspective(1200px);
+    transform-style: preserve-3d;
+  }
+
+  #app .card-info p {
+    margin-top: 20px;
+  }
+
+  #app .card-wrap:hover .card-info {
+    opacity: 1; /* Show overlay on hover */
+  }
+
+  #app .card-wrap:hover .card-info p,
+  #app .card-wrap:hover .card-info h1,
+  #app .card-wrap:hover .card-info .redline {
+    opacity: 1;
+  }
+
+  #app .card-wrap:hover .card-info,
+  #app .card-wrap:hover .card-info p,
+  #app .card-wrap:hover .card-info h1,
+  #app card-wrap:hover .card-info .redline {
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #app .card-wrap:hover .card-info:after {
+    transition: 3s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #app .card-wrap:hover .card-bg {
+    transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+      opacity 4s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0.8;
+    filter: none;
+    -webkit-filter: grayscale(0);
+  }
+
+  #app .card-wrap:hover .card {
+    transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: none;
+  }
+
+  section.two #app .card {
+    position: relative;
+    flex: 0 0 400px;
+    width: 250px;
+    height: 250px;
+    background-color: #000;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+      inset #333 0 0 0 5px,
+      inset rgba(255, 255, 255, 0.4) 0 0 0 6px;
+    transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+
+  #app .card-bg {
+    opacity: 0.5;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+      opacity 4s 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    pointer-events: none;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+  #app .card-info {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure the overlay covers the entire card */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition for opacity and transform */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Include padding in width and height */
+    opacity: 0; /* Initially hidden */
+  }
+
+  #app .card-info p,
+  #app .card-info h1,
+  #app .card-info .redline {
+    opacity: 1; /* Ensure text content is visible */
+    transition: opacity 0.6s ease; /* Smooth transition for opacity */
+  }
+
+  #app .card-info * {
+    position: relative;
+    z-index: 1;
+  }
+
+  #app .card-info:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    background-blend-mode: overlay;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+
+  #app .card-info h1 {
+    font-family: "Inconsolata", "Montserrat";
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+                transform 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  #app .card-wrapper {
+    display: inline-block; /* or any other appropriate display value */
+  }
+
+  #app .card-link {
+    text-decoration: none; /* Remove underline on the link */
+    color: inherit; /* Inherit text color from parent */
+    display: block; /* Make the link fill the entire wrapper */
+  }
+
+  #app .forwardslash {
+    color: #ff6978;
+    font-weight: 800;
+  }
+
+  /*Section 3*/
+
+  .project-description-container {
+    width: 310px;
+  }
+
+  .personalprojectscontainer {
+    margin:0;
+    background:#00BCD4;
+    overflow-x:hidden;
+  }
+
+  .personalprojectscontainer .section-title {
+    font-size: 30px;
+  }
+
+  .project-image-container .project-image {
+    height: 500px;
+    width: 281.25px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .races {
+    width:fit-content;
+    display:flex;
+    flex-wrap:nowrap;
+  }
+
+  .races h2 {
+    font-family: "Inconsolata", sans-serif;
+    font-size:5vh;
+    flex-shrink:0;
+    padding-right:0.3em;
+    color:#212121;
+    text-align: top;
+    padding-left: 100px;
+    margin:0;	
+  }
+
+  .races p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11.5px;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 30px;
+  }
+
+  .lightBG {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .space-20vh {
+    height:70vh;
+  }
+
+  .space-30vh {
+    height:50vh;
+  }
+
+  .space-50vh {
+    height:50vh;
+  }
+
+  p #p2d2::before{
+      content: "\a";
+      white-space: pre;
+  }
+
+  p #p2d1::after{
+      content: "\a";
+      white-space: pre;
+  }
+
+  .pptext {
+    font-family: "Inconsolata", "Montserrat";
+    font-size: 3vh;
+  }
+
+  iframe {
+    height: 450px;
+    width: 300px;
+    margin-left: 50px;
+      margin-right: 0px;
+  }
+
+
+  /*Section 5*/
+
+  div.container-sec-5 h1.textsec5 {
+    font-size: 35px;
+    width: 95%;
+    height: 120px;
+    justify-content: center;
+  }
+  }
+
+
+

@@ -1,0 +1,1027 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+.projectsection {
+    color: #212121;
+    background-color: #efefef;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: fit-content;
+}
+
+.cssection {
+    color: #212121;
+    background-color: #efefef;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: fit-content;
+}
+
+.aftercarebannercontainer {
+    text-align: center;
+    background-color: #efefef;
+}
+
+.aftacarebanner {
+    height: 540px;
+    width: 960px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.projectheadingcontainer {
+    background-color: #efefef;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;  
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forwardslash {
+    color: #ff6978;
+    font-weight: bolder;
+}
+
+.projectheading { 
+    font-family: "Montserrat";
+    font-weight: bolder; 
+    color: #ff6978;
+}
+
+.projectparagraphcontainer {
+    background-color: #efefef;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.mainprojectinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projectelevator {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.projectelevatorp {
+    font: inherit;
+    font-weight: bolder;
+    font-size: 27px;
+}
+
+.projectdescriptioncontainer {
+    background-color: #efefef;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.projectimagecontainer1 {
+    flex: 0 0 37%; /* Image container takes up 70% of the available space */
+    margin: auto; /* Gap between image and text container */
+}
+
+
+.uplofiproimagecontainer {
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+}
+
+.pwimagecontainer {
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+.dwimagecontainer {
+    width: 100%;
+    height: 100%;
+}
+
+.dwimage {
+    width: 100%;
+    height: 100%;
+}
+
+.pwimage {
+    height: auto;
+    width: 750px;
+}
+
+.csimagecontainer {
+    height: 65%;
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.projectimage {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding:15px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.uplofiproimage {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+.projectinfocontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectinfocontainer1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribute items evenly */
+}
+
+.researchinfocontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectinfocontainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.challengecontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 0px;
+}
+
+.authortitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    max-width: 25%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.authortitle1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+    width: calc(33.33% - 20px); /* Adjusted width calculation */
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add margin to separate rows */
+    display: flex;
+    flex-direction: column;
+}
+
+.projectinfocontainer1::after {
+    content: ''; /* Create a pseudo-element */
+    justify-content: center;
+}
+
+.authortitleheading {
+    font-family: "Inconsolata", "Montserrat";
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.researchtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    max-width: 20%;
+}
+
+.accessabilityline {
+    background-color: #FF6978;
+    width: 25px;
+    height: 5px;
+}
+
+.authordescription1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.authordescription {
+    font-family: "Montserrat", sans-serif;
+}
+
+.solutionp {
+    font-family: "Montserrat", sans-serif;
+    padding-left: 110px;
+}
+
+.solutionp1 {
+    font-family: "Montserrat", sans-serif;
+    padding-right: 110px;
+}
+
+.imageshowcase {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    gap: 20px;
+}
+
+.pwimageshowcase {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.uplofiimageshowcase {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+
+.uplofiimageshowcase1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.challengetitle {
+    font-family: "Inconsolata", "Montserrat";
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.upheading {
+    font-family: "Inconsolata", "Montserrat";
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.challengedescription {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 80px;
+}
+
+.uplofiproimagecontainer .bandf {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 50px; 
+}
+
+.challengequestion {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.challengesolutioncontainer {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 100px;
+}
+
+.projectimagecontainer {
+    flex: 0 0 60%; /* Image container takes up 70% of the available space */
+    margin-right: 0px; /* Gap between image and text container */
+}
+
+.challengesolutioninfo,
+.challengesolutioninfo1 {
+    flex: 0 0 30%; /* Text container takes up 30% of the available space */
+}
+
+.userpersonacontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 100px;
+}
+
+.dwcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+}
+
+.dwcontainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+}
+
+.dwinfocontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.lofiprocontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.lofiproinfocontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lofiprodesc {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.lofiproimagecontainer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.lofiproimage {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.usfcontainer {
+    margin-bottom: 150px;
+    margin-top: 80px;
+}
+
+
+.usfinfocontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.usfdesccontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.usfdesc {
+    width: 30%;
+    text-align: left;
+}
+
+.findingscontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.findingscontainer .rounds h4 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.takeaways {
+    font-family: "Inconsolata", "Montserrat";
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.roundinsights {
+    display: flex;
+    justify-content: left;
+    align-items: center; /* Center vertically */
+    flex-direction: row;
+    margin: auto;
+    padding: 20px
+}
+
+.insightimage {
+    margin-right: 40px; /* Adjust margin as needed */
+}
+
+.insighttext {
+    text-align: left;
+    padding: 20px;
+}
+
+.userjourneycontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.ujminfocontainer {
+    width: 50%;
+    padding-left: 5%;
+    text-align: right;
+}
+
+.paperwireframecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.updatedloficontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.mockupcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+}
+
+.updatedlofiheadings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.pwinfocontainer {
+    width: 100%;
+    text-align: center;
+}
+
+.uplofiinfocontainer {
+    width: 100%;
+    text-align: center;
+}
+
+.pwdesc {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+
+.cssolutioncontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 100px;
+}
+
+.challengesolutioninfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.challengesolutioninfo1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: right;
+}
+
+.challengesolution {
+    display: block;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 20px;
+}
+
+.challengesolution1 {
+    display: block;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 20px;
+}
+
+.challengetitle1 {
+    display: block;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.challengesolutionnumber {
+    font-family: "Montserrat", sans-serif;
+    color: #ff69788e;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.probstatement {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.probdesc {
+    width: 70%;
+}
+
+.ujdesc {
+    text-align: right;
+}
+
+.dwdesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cssolutiontitle {
+    display: flex; 
+    justify-content: center;
+    font-weight: bold;
+}
+
+.cssolutiondesc {
+    text-align: center;
+}
+
+.challengesolutioncontainer .projectimage {
+    padding-top: 0px;
+    width: 80%;
+}
+
+.mobileuserflowcontainer {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileinfocontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    gap: 15px;
+}
+
+.mobileinfotitle {
+    font-family: "Inconsolata", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.mobileinfodescription {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px; 
+    font-weight: bold;
+    display: inline-block;
+}
+
+.hifiprotocontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Accessability-considerations{
+margin-top: 30px;
+margin-bottom: 100px;
+}
+
+.accdescription {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px; 
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.takeawaycontainer {
+    margin-bottom: 100px;
+}
+
+.csnumber {
+    height: 50px;
+    width: 50px;
+    color: #ff69788e;
+}
+
+
+.findingparcon {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.hifidesc {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 50px;
+}
+
+/* cards */
+
+
+  .app1 {
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .app2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  p {
+    line-height: 1.5em;
+  }
+  
+  h1 + p,
+  p + p {
+    margin-top: 10px;
+  }
+  
+  .card-wrap {
+    margin: 10px;
+    transform: perspective(1200px);
+    transform-style: preserve-3d;
+  }
+  
+  
+  
+  .card {
+    position: relative;
+    flex: 0 0 400px;
+    width: 360px;
+    height: 360px;
+    background-color: transparent;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+      inset #efefef 0 0 0 5px,
+      inset #efefef 0 0 0 6px;
+    transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  .card-bg {
+    opacity: 0.5;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+      opacity 4s 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    pointer-events: none;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+  
+  .card-info {
+    padding: 20px;
+    position: absolute;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  
+  
+  .card-info .redline {
+    opacity: 1;
+    text-shadow: black 0 2px 3px;
+    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  .card-info * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-info:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    background-blend-mode: overlay;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  .card-info h3 {
+    font-family: "Inconsolata", "Montserrat";
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    text-shadow: rgba(0, 0, 0, 0.262) 0 10px 10px;
+    opacity: 1;
+  }
+  
+  .card-wrapper {
+    display: inline-block; /* or any other appropriate display value */
+  }
+  
+  .card-link {
+    text-decoration: none; /* Remove underline on the link */
+    color: inherit; /* Inherit text color from parent */
+    display: block; /* Make the link fill the entire wrapper */
+  }
+
+
+/*CAROUSEL SHOWCASE*/  
+
+.carousel-showcase {
+border-radius: 50px;
+}
+
+.carousel-showcase,
+.carousel-control-prev,
+.carousel-control-next {
+    cursor: none !important;
+}
+
+.carousel-fade {
+    .carousel-inner {
+        .carousel-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition-property: opacity;
+        }
+        
+        .carousel-item,
+        .active.carousel-item.left,
+        .active.carousel-item.right {
+            opacity: 0;
+        }
+
+        .active.carousel-item,
+        .carousel-item-next.carousel-item-left,
+        .carousel-item-prev.carousel-item-right {
+            opacity: 1;
+        }
+
+        .carousel-item-next,
+        .carousel-item-prev,
+        .active.carousel-item.left,
+        .active.carousel-item.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    /* Targeting the carousel control buttons directly */
+    .carousel-control-prev,
+    .carousel-control-next {
+        z-index: 2; /* Ensures controls appear above carousel items */
+    }
+}
+
+/* carousel */
+
+.carousel-showcase {
+    border-radius: 50px;
+}
+
+.carousel-showcase,
+.carousel-control-prev,
+.carousel-control-next {
+    cursor: none !important;
+}
+
+.carousel-fade {
+    .carousel-inner {
+        .carousel-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition-property: opacity;
+        }
+        
+        .carousel-item,
+        .active.carousel-item.left,
+        .active.carousel-item.right {
+            opacity: 0;
+        }
+
+        .active.carousel-item,
+        .carousel-item-next.carousel-item-left,
+        .carousel-item-prev.carousel-item-right {
+            opacity: 1;
+        }
+
+        .carousel-item-next,
+        .carousel-item-prev,
+        .active.carousel-item.left,
+        .active.carousel-item.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    /* Ensures controls appear above carousel items */
+    .carousel-control-prev,
+    .carousel-control-next {
+        z-index: 2  ;
+    }
+
+    /* Apply gradient background with initial opacity 50% */
+    .carousel-control-prev {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .carousel-control-next {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    /* Change opacity to 100% on hover */
+    .carousel-control-prev:hover {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .carousel-control-next:hover {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+}
+
+.carousel-showcase,
+.carousel,
+.carousel-inner,
+.carousel-inner .carousel-item {
+    height: 790px;
+}
+
+.carousel-inner .carousel-item {
+    padding: 50px;
+}
+
+li::marker { font-size: 0; }
+
+.carousel-item:nth-child(1) {
+    background: #89a1efbc;
+}
+
+.carousel-item:nth-child(2) {
+    background: #212121b6;
+}
+
+.carousel-item:nth-child(3) {
+    background: #0f7173ab;
+}
+
+.carousel-item:nth-child(4) {
+    background: #212121b6;
+}
+
+.carousel-item:nth-child(5) {
+    background: #e60606b6;
+}
+
+.carousel-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.carousel-indicators li[data-bs-target="#carousel"] {
+    cursor: none;
+}
+
+  /*Prototype buttons*/
+
+.mobilelink,
+.desktoplink {
+    margin-top: 50px;
+    width: 100%;
+    height: 70px;
+    border-radius: 35px;
+    padding: 15px;
+    border: solid; 
+    border-color: #FF6978;
+    border-width: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: "Inconsolata", "Montserrat";
+    font-size: 22px;
+    font-weight: 900;
+    text-decoration: none; /* Remove underline from anchor tags */
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.mobilelink:hover,
+.desktoplink:hover {
+    border-color: #212121;
+    background-color: #212121;
+    color: #FF6978;
+    cursor: none; /* Change cursor to pointer on hover */
+    font-family: "Montserrat", "Inconsolata";
+    display: inline-flex;
+    align-items: center;
+}
+
+.mobilelink,
+.desktoplink {
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s; /* Add transition effect */
+}
+
+.buttoncontainer a {
+    display: inline-block;
+    width: auto; /* Ensure the anchor tag takes the full width of its container */
+    text-decoration: none; /* Remove underline */
+}
+
+.buttoncontainer {
+    display: flex;
+    flex-direction: row; /* Ensure anchor tags are arranged horizontally */
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+
+
