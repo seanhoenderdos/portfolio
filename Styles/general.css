@@ -400,6 +400,15 @@ section.five {
     .project-image-container {
       margin: auto;
     }
+
+    #c1desc {
+      width: 100%;
+    }
+
+    .farewellimage {
+      width: 100%;
+      height: auto;
+    }
     
     .project-image-container .project-image {
       height: 580px;
