@@ -397,14 +397,13 @@ section.five {
       padding-right: 40px;
     }
 
-    #c1desc {
-      width: 100%;
-    }
-
     .project-image-container {
       margin: auto;
     }
     
+    #c1desc {
+      width: 100%;
+    }
 
     .farewellimage {
       width: 100%;
